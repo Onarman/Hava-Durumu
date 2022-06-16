@@ -15,14 +15,18 @@ body{
     background-attachment: fixed;
     background-position: center center;
     overflow: hidden;    
+    opacity: 0.7;
+    color: black;
 }
 
 .container{
+    color: black;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5rem;
+    padding: 2rem;
     gap: 2rem;
 }
 
