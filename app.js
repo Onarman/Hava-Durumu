@@ -11,15 +11,30 @@ const setQuery = (e) => {
 const getResult =  (cityName) => {
 let query = `${url}weather?q=${cityName}&appid=${key}&units=metric&lang=tr` 
 fetch(query)
-.then(weather => {
-    return weather.json()
+.then(result => {
+    return result.json()
 })
 .then(displayResult)
 }
 
-const displayResult = (weather) => {
-    console.log(weather);
+const displayResult = (result) => {
+    console.log(result);
+let city = document.querySelector(".city")
+city.innerText = `${result.name},${result.sys.country}`
+
+let temp =document.querySelector(".temp")
+temp.innerText = `${Math.floor(result.main.temp)}°C`
+
+let desc = document.querySelector(".desc")
+desc.innerText = result.weather[0].description;
+
+let minmax =document.querySelector(".minmax")
+minmax.innerText = `${Math.floor(result.main.temp_min)}°C/${Math.floor(Math.floor(result.main.temp_max))}°C`;
+
+
 }
+
+
 
 
 const input = document.querySelector(".input");

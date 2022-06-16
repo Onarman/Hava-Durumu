@@ -6,15 +6,15 @@
 }
 
 body{
-    color: #fff;
-    background-image: url(./22-1616353306.jpg);
+    
+    background-image: url(./img/trnc-cyprus-Rainy-weather-is-expected-starting-from-tonight.webp);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    
+    overflow: hidden;    
 }
 
 .container{
@@ -22,9 +22,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 2px solid red;
     padding: 5rem;
-    gap: 1rem;
     gap: 2rem;
 }
 
@@ -36,7 +34,7 @@ body{
     color: darkgoldenrod;
     font-size: 3rem;
     line-height: 8rem;
-    text-shadow: 1px 3px rgba(0,0,0,0.9);
+    /* text-shadow: 1px 3px rgba(0,0,0,0.9); */
 
 }
 
@@ -56,14 +54,19 @@ font-size: 1.5rem;
 
 .city, .desc, .minmax{
     font-size: 2rem;
-    font-weight: 400;
-    /* margin-bottom: 0.6rem; */
-    text-shadow: 1px 3px rgba(0,0,0,0.8);
+    font-weight: bold;
+    color: black;
+    
+    
 }
 
 .temp{
     font-size: 3.5rem;
     font-weight: bolder;
+    color: black;
+
+    
+    
     
 }
 
